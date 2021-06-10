@@ -3,5 +3,4 @@ dist: focal
 arch: ppc64le
 language: scala
 script:
-  - cat @/etc/sbt/jvmopts
-  - echo $(@/etc/sbt/jvmopts)
+   - sbt ++$TRAVIS_SCALA_VERSION -jvm-opts travis/jvmopts test
