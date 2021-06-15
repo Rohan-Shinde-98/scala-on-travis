@@ -3,4 +3,4 @@ dist: focal
 arch: ppc64le
 language: scala
 script:
-   - sbt ++$TRAVIS_SCALA_VERSION -jvm-opts travis/jvmopts test
+   - cat cat $JVM_OPTS
